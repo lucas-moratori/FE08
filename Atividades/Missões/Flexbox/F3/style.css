@@ -1,0 +1,21 @@
+.lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.cartao {
+    flex: 1 1 220px;
+    padding: 16px;
+    border: 2px solid #ffb3b3;
+    border-radius: 8px;
+    background: lightsalmon;
+}
+
+.cartao p {
+    color: white;
+}
+
+.cartao h3 {
+    color: brown;
+}

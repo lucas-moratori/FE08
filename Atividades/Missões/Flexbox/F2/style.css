@@ -1,0 +1,23 @@
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 12px 20px;
+    background: black;
+    color: azure;
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+}
+
+.links a {
+    color: hsl(180, 75%, 77%); text-decoration: none;
+    
+}
+
+.links a:hover {
+    color: aliceblue;
+}
+

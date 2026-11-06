@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Menu com Flexbox</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Arial, sans-serif; }
+  .topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111827;
+    color: #fff;
+    padding: 12px 20px;
+  }
+  .topo .logo { font-weight: 800; }
+  .topo nav { display: flex; gap: 16px; }
+  .topo nav a { color: #93c5fd; text-decoration: none; font-size: 14px; }
+  .topo nav a:hover { color: #fff; }
+</style>
+</head>
+<body>
+  <header class="topo">
+    <span class="logo">MinhaLoja</span>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Produtos</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+</body>
+</html>

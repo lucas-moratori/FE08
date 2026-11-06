@@ -1,0 +1,10 @@
+.grade {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    /* ao mudar 1fr 1fr pra 1fr 2fr, a segunda coluna passa a ocupar 2/3 da página. */
+}
+
+.caixa {
+    background: aqua;
+}

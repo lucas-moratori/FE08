@@ -1,0 +1,13 @@
+.grade {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 600px) {
+  .grade { grid-template-columns: 1fr 1fr; }
+}
+
+@media (min-width: 1000px) {
+  .grade { grid-template-columns: repeat(3, 1fr); }
+}

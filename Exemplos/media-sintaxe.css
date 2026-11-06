@@ -1,0 +1,27 @@
+/* Mobile-first: estilo base para telas pequenas */
+.pagina {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+/* A partir de 600px, uma tela um pouco maior */
+@media (min-width: 600px) {
+  .pagina {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* A partir de 1000px, desktop */
+@media (min-width: 1000px) {
+  .pagina {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* Também é possível usar max-width (desktop-first) */
+@media (max-width: 480px) {
+  body {
+    font-size: 15px;
+  }
+}

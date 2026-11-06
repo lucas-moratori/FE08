@@ -1,0 +1,22 @@
+.pagina {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 12px;
+    min-height: 100vh;
+}
+
+header {
+    background: lightskyblue;
+    padding: 15px;
+}
+
+main {
+    background: lightgray;
+    padding: 15px 20px;
+}
+
+footer {
+    background: darkmagenta;
+    padding: 10px;
+    color: white;
+}

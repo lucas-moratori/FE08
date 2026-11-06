@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cartões com Flexbox</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Arial, sans-serif; padding: 20px; background: #f8fafc; }
+  .lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .cartao {
+    flex: 1 1 200px;
+    background: #fff;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .cartao h3 { color: #1e3a8a; font-size: 15px; }
+  .cartao .preco { color: #ea580c; font-weight: 800; }
+  .cartao .acoes { display: flex; gap: 8px; margin-top: auto; }
+  .cartao button {
+    flex: 1;
+    padding: 6px; border: 0; border-radius: 6px;
+    background: #2563eb; color: #fff; font-weight: 700; cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <div class="lista">
+    <div class="cartao"><h3>Camiseta</h3><span class="preco">R$ 49</span><div class="acoes"><button>Comprar</button></div></div>
+    <div class="cartao"><h3>Boné</h3><span class="preco">R$ 29</span><div class="acoes"><button>Comprar</button></div></div>
+    <div class="cartao"><h3>Moletom</h3><span class="preco">R$ 89</span><div class="acoes"><button>Comprar</button></div></div>
+    <div class="cartao"><h3>Caneca</h3><span class="preco">R$ 19</span><div class="acoes"><button>Comprar</button></div></div>
+  </div>
+</body>
+</html>

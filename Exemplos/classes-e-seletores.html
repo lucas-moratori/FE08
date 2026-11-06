@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Classes e Seletores</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .cartao {
+      background: #dbeafe;
+      border: 2px solid #2563eb;
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 12px;
+    }
+    .cartao.destaque {
+      background: #ffedd5;
+      border-color: #ea580c;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="cartao">Cartão normal</div>
+  <div class="cartao destaque">Cartão em destaque</div>
+</body>
+</html>

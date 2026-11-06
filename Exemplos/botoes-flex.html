@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Grupo de Botões com Flexbox</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Arial, sans-serif; padding: 20px; }
+  .grupo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    background: #f1f5f9;
+    padding: 16px;
+    border-radius: 12px;
+  }
+  .grupo button {
+    padding: 10px 18px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: inherit;
+    background: #2563eb;
+    color: #fff;
+  }
+  .grupo button.secundario { background: #64748b; }
+  .grupo button.perigo { background: #dc2626; }
+</style>
+</head>
+<body>
+  <div class="grupo">
+    <button>Confirmar</button>
+    <button class="secundario">Cancelar</button>
+    <button class="perigo">Excluir</button>
+  </div>
+</body>
+</html>
